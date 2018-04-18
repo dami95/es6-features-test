@@ -1,3 +1,4 @@
+//http://es6-features.org/#Constants
 //tested in nodeJS v8.9.4 on MacOS
 
 console.log('Math.PI', Math.PI);
