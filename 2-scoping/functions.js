@@ -65,7 +65,7 @@ foo2(); //d
   foo5(); //i
 })();
 
-// * let's test old style - withour function expression
+// * let's test old style - without function expression
 (function() {
   function foo6() { console.log('k'); }
   foo6(); //k
