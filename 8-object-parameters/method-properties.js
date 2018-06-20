@@ -1,3 +1,4 @@
+//http://es6-features.org/#MethodProperties
 //tested in nodeJS v8.9.4 on MacOS
 
 var obj = {

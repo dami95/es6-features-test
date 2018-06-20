@@ -1,3 +1,4 @@
+//http://es6-features.org/#PropertyShorthand
 //tested in nodeJS v8.9.4 on MacOS
 var a = 1;
 var b = 2;
