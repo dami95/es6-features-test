@@ -1,6 +1,8 @@
 //http://es6-features.org/#MethodProperties
 //tested in nodeJS v8.9.4 on MacOS
 
+//* this in methods - functions in objects
+
 var obj = {
     name: 'Damian',
 
@@ -23,6 +25,6 @@ obj.hello(); //Hello Damian
 obj.hey(); // Hey Damian
 obj.bye('BYE'); //BYE Damian
 
-var gen = obj.generator(); //@TOLEARN
+var gen = obj.generator(); //@TODO
 console.log(gen.next().value); // 0
 console.log(gen.next().value); // 1

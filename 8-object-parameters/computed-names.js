@@ -1,6 +1,7 @@
 //http://es6-features.org/#ComputedPropertyNames
 //tested in nodeJS v8.9.4 on MacOS
 
+// * computed names in properties of object
 var id = () => 23;
 
 var cache = {
