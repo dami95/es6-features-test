@@ -27,3 +27,23 @@ function sum2(...params) {
 }
 sum2(...arr4); //[ 1, 2, 3 ] - sum: 6
 sum2(3,4); //[3, 4] - sum: 7
+
+// * two parameters and ...args
+function calculate(sign, ...args) {
+    if (!['+', '-', '*', '/', '%'].includes(sign)) {
+        return false;
+    }
+    return args.reduce((a,b) => eval(a+sign+b));
+}
+console.log(calculate('+', 1,2,3,4)); //10
+console.log(calculate('-', 1,2,3,4)); //-8
+console.log(calculate('--', 1,2,3,4)); //false
+
+/*
+// * two parameters and ...args
+function calculate(...args, sign) { //SyntaxError: Rest parameter must be last formal parameter
+    return args.reduce((a,b) => eval(a+sign+b));
+}
+console.log(calculate(1,2,3,4, '+',));
+console.log(calculate(1,2,3,4, '-',));
+*/

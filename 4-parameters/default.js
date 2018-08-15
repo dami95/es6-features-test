@@ -30,3 +30,11 @@ function pow2(a, b = 2) {
 console.log(pow2(3)); // 9
 console.log(pow2(3,3)); // 27
 console.log(pow2(3,4)); // 81
+
+/*
+// * default parameter with ...args
+function sum(...args = [1,2,3]) { //SyntaxError: Rest parameter may not have a default initializer
+    return args.reduce((a,b) => a+b); //81
+}
+sum(1,2,3,4);
+*/
